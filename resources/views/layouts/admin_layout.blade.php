@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Static Navigation - SB Admin</title>
+        <title>Agency Dashboard</title>
         <link href="{{asset('css/dashboard_styles.css')}}" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
@@ -59,7 +59,7 @@
                                 </nav>
                             </div>
 -->
-                            <a class="nav-link" href="{{route('admin.mian')}}">
+                            <a class="nav-link" href="{{route('admin.main')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Main
                             </a>
@@ -81,6 +81,7 @@
             </div>
             <div id="layoutSidenav_content">
 
+                @include('alart.messeges')
                 @yield('content')
 
                 <footer class="py-4 bg-light mt-auto">

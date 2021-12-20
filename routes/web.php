@@ -21,7 +21,8 @@
 
  Route::get('/', 'BannerController@index')->name('home');
  Route::get('/admin/dashboard', 'BannerController@dashboard')->name('admin.dashboard');
- Route::get('/admin/main', 'BannerController@main')->name('admin.mian');
+ Route::get('/admin/main', 'MainPagesController@index')->name('admin.main');
+ Route::put('/admin/main', 'MainPagesController@update')->name('admin.main.update');
 
 Auth::routes();
 
